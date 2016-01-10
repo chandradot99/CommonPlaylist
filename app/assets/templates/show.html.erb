@@ -1,0 +1,28 @@
+<form ng-submit="book()">
+  <input type="submit" class="btn btn-default" value="Register">
+</form>
+
+
+<div class="row">
+    <div class="col-md-12">
+                {{Event.date}}<br/>
+                {{Event.time}}<br/>
+                {{Event.venue}}<br/>
+    </div>
+</div>
+
+<div ng-controller='PlayerController'>
+    <div ng-repeat="playlist in playlists">
+        {{playlist.name}}
+        <button ng-click="vote(playlist.id,playlist.name)">Vote</button>
+    </div>
+    
+    <button ng-click="start()">Start</button>
+</div>
+
+<div ng-controller="SongController">
+    <input type="file" nv-file-select="" uploader="uploader" multiple /><br/>
+    <button type="button" class="btn btn-success btn-s" ng-click="uploader.uploadAll()">Upload</button>
+</div>
+
+

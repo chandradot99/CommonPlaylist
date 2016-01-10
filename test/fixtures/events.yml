@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2015-10-06
+  time: 2015-10-06 01:46:46
+  venue: MyText
+
+two:
+  date: 2015-10-06
+  time: 2015-10-06 01:46:46
+  venue: MyText
