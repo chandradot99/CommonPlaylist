@@ -12,13 +12,16 @@
 </div>
 
 <div ng-controller='PlayerController'>
-    <div ng-repeat="playlist in playlists">
-        {{playlist.name}}
-        <button ng-click="vote(playlist.id,playlist.name)">Vote</button>
-    </div>
-    
-    <button ng-click="start()">Start</button>
+
+  <table class="table table-striped">
+    <tr ng-repeat="playlist in playlists">
+      <td>{{playlist.name}}</td>
+      <td><button class="btn btn-success btn-sm" ng-click="vote(playlist.id,playlist.name)">Vote</button></td>
+    </tr>
+  </table>
+  <button class="btn btn-primary" ng-click="start()">Start Event</button>
 </div>
+
 
 <div ng-controller="SongController">
     <input type="file" nv-file-select="" uploader="uploader" multiple /><br/>

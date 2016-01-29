@@ -99,6 +99,7 @@ angular.module('myApp')
 
           $scope.start = function()
           {
+              console.log("hello");
               $scope.Id = $scope.votes.indexOf(Math.max.apply(Math,$scope.votes));
               $scope.Name = $scope.names[$scope.Id];
               $scope.votes[$scope.Id] = 0;
